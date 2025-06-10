@@ -18,11 +18,11 @@ Route::post("show/{id}","show");
 });
 
 Route::controller(UserController::class)->group(function(){
-Route::post("register","register");
-Route::post("login","login");
-Route::post("verifyCode","verifyCode");
-Route::post("resendVerificationCode","resendVerificationCode");
-Route::post("logout","logout")->middleware('auth:sanctum');
+Route::post("/register","register");
+Route::post("/login","login");
+Route::post("/verifyCode","verifyCode");
+Route::post("/resendVerificationCode","resendVerificationCode");
+Route::post("/logout","logout")->middleware('auth:sanctum');
 });
 
 
